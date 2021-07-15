@@ -1,0 +1,14 @@
+<!doctype html>
+
+<title>Gender Classification</title>
+
+<a href="/">Upload photos</a>
+
+<h1>Results:</h1>
+
+<div>
+	{% for item in result %}
+		<h5>Gender : {{item.gender_text}}</h5>
+		<h5>Confidence : {{item.Confidence}}</h5>
+	{% endfor %}
+</div>
